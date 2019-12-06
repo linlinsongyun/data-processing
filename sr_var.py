@@ -19,7 +19,8 @@ def get_wavlist(dir, ext='.wav'):
             continue
         wav_list.append(file)
     return  wav_list
-    def sr_var(srcdir, dstdir, target_sr):
+
+def sr_var(srcdir, dstdir, target_sr):
     if os.path.exists(srcdir):
         if not os.path.exists(dstdir):
             os.mkdir(dstdir)
